@@ -8,12 +8,12 @@ export default function CalendarPage() {
     <div className="flex min-h-screen bg-background">
       <Sidebar />
 
-      <main className="flex-1 p-4 lg:p-6 lg:ml-64">
+      <main className="flex-1 p-4 lg:p-6 lg:ml-64 animate-slide-in-up duration-300 ease-out">
         <Header
           title="Calendar"
           description="Schedule and track your events and meetings."
           actions={
-            <Button className="w-full sm:w-auto h-9 text-sm bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:scale-105">
+            <Button className="w-full sm:w-auto h-9 text-sm bg-primary hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:scale-105 text-primary-foreground">
               + Add Event
             </Button>
           }

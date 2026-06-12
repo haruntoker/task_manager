@@ -8,7 +8,7 @@ export default function AnalyticsPage() {
     <div className="flex min-h-screen bg-background">
       <Sidebar />
 
-      <main className="flex-1 p-4 lg:p-6 lg:ml-64">
+      <main className="flex-1 p-4 lg:p-6 lg:ml-64 animate-slide-in-up duration-300 ease-out">
         <Header
           title="Analytics"
           description="Track your performance and productivity metrics."

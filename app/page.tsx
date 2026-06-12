@@ -9,6 +9,7 @@ import { ProjectProgress } from "@/components/dashboard/project-progress"
 import { MobileAppCard } from "@/components/dashboard/mobile-app-card"
 import { TimeTracker } from "@/components/dashboard/time-tracker"
 import { Button } from "@/components/ui/button"
+import { toast } from "sonner"
 
 export default function DashboardPage() {
   return (
@@ -17,7 +18,7 @@ export default function DashboardPage() {
         <Sidebar />
       </div>
 
-      <main className="flex-1 p-3 md:p-4 lg:p-5 lg:ml-64">
+      <main className="flex-1 p-3 md:p-4 lg:p-5 lg:ml-64 animate-slide-in-up duration-300 ease-out">
         <Header
           title="Dashboard"
           description="Plan, prioritize, and accomplish your tasks with ease."
@@ -29,6 +30,9 @@ export default function DashboardPage() {
               <Button
                 variant="outline"
                 className="w-full sm:w-auto h-9 text-sm transition-all duration-300 hover:shadow-md hover:scale-105 bg-transparent"
+                onClick={() => {
+                  toast.success("Data imported successfully")
+                }}
               >
                 Import Data
               </Button>
